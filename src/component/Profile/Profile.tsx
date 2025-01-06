@@ -6,7 +6,7 @@ export default function Profile() {
 
     return(
         <>
-            <div className="w-[45%] p-16 ">
+            <div className="w-[45%] py-10 px-16 ">
                 <nav className="Profile text-center text-2xl">
                     <a href="#" className="test">Home</a>
                     <a href="#" className="test mx-16">Project</a>

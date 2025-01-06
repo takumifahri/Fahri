@@ -6,7 +6,7 @@ export default function MyPortofolio(){
 
     return(
         <>
-            <div className="w-[55%] bg-[#1C1B22] p-16 ">
+            <div className="w-[55%] bg-[#1C1B22] py-10 px-16 ">
                 <nav className="Portofolio">
                     <Link href="/">
                         <p className="text-2xl text-white font-bold">MY PORTOFOLIO.</p>
