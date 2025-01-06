@@ -1,3 +1,6 @@
+import Image from "next/image";
+import profilePicture from "@/public/img/profile.png";
+
 export default function Profile() {
 // Backend
 
@@ -9,7 +12,11 @@ export default function Profile() {
                     <a href="#" className="test mx-16">Project</a>
                     <a href="#ContactMe" className="test"> Contact Me</a>
                 </nav>
+                <div className="photo mt-24 flex justify-center">
+                    <Image src={profilePicture} alt="Profile Image" width={800} height={200} />
+                </div>
             </div>
+           
         </>
     )
 }

@@ -1,14 +1,15 @@
 import Image from "next/image";
 import { MdOutlineHorizontalRule } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
+import DPKPP from '@/public/img/DPKPP.jpg';
 export default function ProjectCard() {
     const data_project = [
         {
             id: 1,
             position: "IT Support",
-            title: "Project 1",
-            description: "Description 1",
-            image: "/images/image1.jpg"
+            title: "Project SIMPOL V.02",
+            description: "Aplikasi untuk mempermudah pelayanan administrasi Pengesahan Dokumen Rencana Teknis (PDRT) dan Surat Keterangan Izin Mendirikan Bangunan Gedung (IMBG) serta pencarian data IMBG.",
+            image: DPKPP
         },
         {
             id: 2,
@@ -41,17 +42,17 @@ export default function ProjectCard() {
                 <div className="grid grid-cols-3 gap-12 mt-6">
                     {data_project.map((project) => (
                         <div key={project.id} className="mb-8 border-solid border-2 border-[#2AD882] rounded-lg p-6">
-                            <p className="text-2xl text-white">{project.position}</p>
+                            <p className="text-2xl text-white mb-5">{project.position}</p>
                             <Image
-                                width={100}
+                                width={375}
                                 height={224}
-                                className="h-56 object-cover object-center"
+                                className=" object-cover object-center"
                                 src={project.image}
                                 alt={project.title}
                             />
-                            <div className="p-4">
-                                <h1 className="text-2xl font-semibold text-gray-800">{project.title}</h1>
-                                <p className="mt-2 text-green-600">{project.description}</p>
+                            <div className="mt-5">
+                                <h1 className="text-xl font-semibold text-white">{project.title}</h1>
+                                <p className="mt-2 text-sm text-gray-300 text-justify">{project.description}</p>
                             </div>
                         </div>
                     ))}
