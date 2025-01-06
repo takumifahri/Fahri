@@ -6,25 +6,25 @@ export default function MyPortofolio(){
 
     return(
         <>
-            <div className="w-[55%] bg-[#1C1B22] py-10 px-16 ">
+            <div className="lg:w-[55%] md:w-[60%] w-[75%] bg-[#1C1B22] py-10 px-16 ">
                 <nav className="Portofolio">
                     <Link href="/">
-                        <p className="text-2xl text-white font-bold">MY PORTOFOLIO.</p>
+                        <p className="text-2xl lg:text-lg text-white font-bold">MY PORTOFOLIO.</p>
                     </Link>
                 </nav>
 
-                <div className="introduction mt-32 grid grid-cols-1 gap-5">
+                <div className="introduction mt-24 grid grid-cols-1 gap-5">
                     <p className="text-xl text-white">
                         Software Developer
                     </p>
 
-                    <p className="text-7xl text-white font-bold leading-none">
+                    <p className="lg:text-7xl md:text-4xl sm:text-2xl text-3xl text-white font-bold leading-none">
                         Hello I am
                         <br />
                         <span className="text-[#2AD882]">Fahri Radiansyah</span>
                     </p>
-                    <p className="text-lg text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quaerat vel asperiores illum, accusantium nemo saepe. Dolorem fuga tempora magni minima labore nihil recusandae non aperiam, numquam voluptates quibusdam facilis vitae quae unde. Asperiores dicta similique voluptate laboriosam nesciunt illum, quod ex eligendi maxime maiores, consequuntur veritatis provident sit molestias.
+                    <p className="lg:text-lg text-xs text-pretty text-white">
+                        Halo! Saya Fahri, seorang software engineer yang sedang menempuh pendidikan di IPB university di bidang Manajemen Informatika! Software Engineering yang saya lakukan saat ini adalah web design, struktur web serta development web! Bisa kalian check hasil hasil project saya saat ini, dan juga saya pengalaman pada organisasi!
                     </p>
 
                     <div className="download-cv w-[40%] border-solid border-2 flex justify-around border-[#2AD882]">

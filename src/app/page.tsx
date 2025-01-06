@@ -11,12 +11,12 @@ import Footer from "@/component/footer/page";
 export default function Home() {
   return (
     <>
-      <main>
-        <section className="flex justify-between">
+      <main className="w-[100%]">
+        <section className="flex justify-between  w-auto">
           <MyPortofolio />
           <Profile />
         </section>
-        <section className="bg-[#1C1B22]">
+        <section className="bg-[#1C1B22] lg:w-auto sm:w-[100%]">
           <TitleLearning />
           <SKill />
         </section>

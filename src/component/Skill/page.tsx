@@ -67,7 +67,7 @@ export default function SKill(){
         {
             id: 1,
             institution : "SMAN 104 Jakarta",
-            program : "HighSchool of Science and Mathematics",
+            program : "High School of Science and Mathematics",
             year: "2020-2023",
         },
         {
@@ -81,7 +81,7 @@ export default function SKill(){
     ]
     return(
         <>
-            <div className="w-auto p-6 gap-32 grid-cols-1 grid">
+            <div className="lg:w-[100%] p-6 gap-32 grid-cols-1 grid">
                 <div className="container flex justify-between  gap-20">
                     <div>
                         <Timeline data={education} />

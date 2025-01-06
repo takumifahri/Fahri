@@ -32,7 +32,7 @@ export default function TitleLearning() {
     return (
         <>
             
-            <div id="Learning-Path" className="p-16 grid grid-cols-1 gap-6">
+            <div id="Learning-Path" className="w-[100%] p-16 grid grid-cols-1 gap-6">
                 <p className="text-lg text-white flex gap-5 ">
                 <span className="text-[#2AD882] text-3xl">
                     <MdOutlineHorizontalRule />
