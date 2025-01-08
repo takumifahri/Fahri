@@ -34,7 +34,7 @@ export default function ProjectCard() {
             title: "Project Jurnalisa",
             description: "Jurnalisa merupakan produk halaman web tentang berita, dengan referensi dari Tirto.ID dan Narasi.tv. Namun, kami akan membuat versi lite yang berfokus pada jurnal, aktivitas, dan acara di SMA 51 Jakarta. Dengan demikian, mereka dapat mempromosikan sekolah mereka kepada masyarakat luas dan menarik minat calon siswa untuk masuk ke SMA 51 Jakarta.",
             image: Jurnalisa,
-            tgl: 'Nov 2024 - Now',
+            tgl: 'Jan 2024 - May 2024',
             link: 'https://github.com/dzackyluc/quadrilateral-project'
         }
     ];
@@ -53,7 +53,7 @@ export default function ProjectCard() {
                 </p>     
                 <div className="grid grid-cols-3 gap-12 mt-6">
                     {data_project.map((project) => (
-                      <Link key={project.id}   href={project.link} onClick={project.link === 'https://github.com/takumifahri' ? (e) => { e.preventDefault(); Swal.fire({ title: 'Error!', text: 'You cannot access this link!', icon: 'error' }); } : undefined}>
+                      <Link key={project.id} href={project.link}>
                         <div className="lg:mb-8 md:mb-2 lg:w-[26rem] md:w-[15rem] grid grid-cols-1 lg:gap-5  md:gap-0 border-solid border-2 border-[#2AD882] rounded-lg lg:p-6 md:p-3 lg:h-[40rem] md:h-[35rem]">
                             <p className="lg:text-2xl md:text-lg text-white">{project.position}</p>
                             <div className="w-[100%] lg:w-[210px] md:w-[150px] sm:w-[75px] lg:h-[224px] md:h-[100px] mx-auto" style={{ backgroundImage: `url(${project.image.src})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
