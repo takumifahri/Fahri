@@ -1,8 +1,9 @@
 import Image from "next/image";
-import { FaHtml5, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaReact, FaNodeJs, FaLaravel } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { BsCodeSlash } from "react-icons/bs";
 import { FaBootstrap } from "react-icons/fa6";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export default function Skills() {
   // Updated SkillIcon component with neon shadow effect
@@ -38,8 +39,10 @@ export default function Skills() {
     { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
     { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
     { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
-    { name: "React", icon: <FaReact className="text-blue-400" /> },
+    { name: "Next JS", icon: <TbBrandNextjs /> },
+    { name: "Laravel", icon: <FaLaravel className="text-red-600" /> },
     { name: "Bootstrap", icon: <FaBootstrap  className="text-purple-400"/> }
+
   ];
 
   return (

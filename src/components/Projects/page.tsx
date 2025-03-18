@@ -1,9 +1,12 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import DPKPP from '@/public/img/DPKPP.jpg';
+import HeyCow from '@/public/assets/heycow.svg';
+import Jurnalisa from '@/public/img/Jurnalisa.png';
 
-export default function Projects(){
+export default function Projects() {
     interface ProjectCardProps {
         title: string;
-        image: string;
+        image: string | StaticImageData;
         period: string;
         type: string;
     }
@@ -19,8 +22,10 @@ export default function Projects(){
               <Image 
                 src={image} 
                 alt={title} 
-                layout="fill" 
-                objectFit="cover" 
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover hover:scale-105 transition-transform duration-300"
+                priority
               />
             </div>
             <div className="p-4 bg-gray-800">
@@ -29,41 +34,30 @@ export default function Projects(){
           </div>
         );
     };
+    
     const projects = [
         { 
-          title: "Full Stack Developer", 
-          image: "/projects/ecommerce1.jpg", 
-          period: "2021 - Present", 
-          type: "E-Commerce Start Up" 
+          title: "Project SIMPOL V.02", 
+          image: DPKPP, 
+          period: "Nov 2024 - Feb 2025", 
+          type: "IT Support" 
         },
         { 
-          title: "Full Stack Developer", 
-          image: "/projects/ecommerce2.jpg", 
-          period: "2021 - Present", 
-          type: "E-Commerce Start Up" 
+          title: "Project HeyCow Web", 
+          image: HeyCow, 
+          period: "August 2024 - Dec 2024", 
+          type: "Frontend Developer" 
         },
         { 
-          title: "Full Stack Developer", 
-          image: "/projects/ecommerce3.jpg", 
-          period: "2021 - Present", 
-          type: "E-Commerce Start Up" 
-        },
-        { 
-          title: "Full Stack Developer", 
-          image: "/projects/ecommerce4.jpg", 
-          period: "2021 - Present", 
-          type: "E-Commerce Start Up" 
-        },
-        { 
-          title: "Full Stack Developer", 
-          image: "/projects/ecommerce5.jpg", 
-          period: "2021 - Present", 
-          type: "E-Commerce Start Up" 
+          title: "Project Jurnalisa", 
+          image: Jurnalisa, 
+          period: "Jan 2024 - May 2024", 
+          type: "UI/UX Slice" 
         }
     ];
 
     return (
-        <section className="bg-gray-900 text-white py-12  px-6 md:px-16 lg:px-28">
+        <section className="bg-gray-900 text-white py-12 px-6 md:px-16 lg:px-28">
           <h2 className="text-2xl font-bold mb-8 flex items-center">
             <span className="w-8 h-1 bg-green-400 inline-block mr-4"></span>
             MY EXPERIENCE

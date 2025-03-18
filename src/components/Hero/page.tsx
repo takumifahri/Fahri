@@ -13,7 +13,7 @@ export default function Hero(){
                     <span className="text-green-400">Fahri Radiansyah</span>
                     </h1>
                     <p className="text-gray-400 mb-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                        Halo! Saya Fahri, seorang software engineer yang sedang menempuh pendidikan di IPB university di bidang Manajemen Informatika! Software Engineering yang saya lakukan saat ini adalah web design, struktur web serta development web! Bisa kalian check hasil hasil project saya saat ini, dan juga saya pengalaman pada organisasi!
                     </p>
                     <button className="flex items-center space-x-2 bg-transparent hover:bg-green-500 text-green-400 hover:text-white border border-green-400 hover:border-transparent rounded px-4 py-2 transition duration-300 ease-in-out w-fit">
                     <span>Download CV</span>

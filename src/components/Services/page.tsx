@@ -24,19 +24,19 @@ export default function Services(){
     };
     const services = [
         {
-          title: "Front End Project",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-          technologies: ["HTML & CSS &", "Javascript"]
+          title: "Front End Development",
+          description: "We provide top-notch front end development services to create visually appealing and user-friendly interfaces.",
+          technologies: ["HTML & CSS, JavaScript, React, Next.js"]
         },
         {
-          title: "Full Stack",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-          technologies: ["HTML & CSS &", "Javascript"]
+          title: "Full Stack Development",
+          description: "Our full stack development services cover both front end and back end to deliver comprehensive solutions.",
+          technologies: ["HTML & CSS, Laravel, Node.JS, etc" ]
         },
         {
-          title: "Web Development",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
-          technologies: ["HTML & CSS &", "Javascript"]
+          title: "Backend Development",
+          description: "We offer professional backend development services to build robust and scalable web applications.",
+          technologies: ["PHP, Node.JS, Express, etc"]
         }
     ];
 
@@ -45,9 +45,9 @@ export default function Services(){
             <div className="container mx-auto">
                 <div className="flex flex-col md:flex-row gap-8">
                     <div className="title-text md:w-1/3">
-                        <h3 className="text-3xl font-bold mb-6">Our Service</h3>
+                        <h3 className="text-3xl font-bold mb-6">My Offer</h3>
                         <p className="text-gray-800 mb-8 max-w-md">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Discover our exceptional services designed to elevate your business. From cutting-edge Front End development and precise UI/UX slicing to robust Backend solutions and comprehensive Full Stack expertise, we have everything you need to succeed.
                         </p>
                     </div>
                     <div className="md:w-2/3">
